@@ -3,8 +3,8 @@ Description=servise for petclinic
 
 [Service]
 User=root
-WorkingDirectory=/spring-petclinic1
-ExecStart=/spring-petclinic1/startpet.sh
+WorkingDirectory=/spring-petclinic
+ExecStart=/spring-petclinic/startpet.sh
 
 [Install]
 
