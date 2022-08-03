@@ -14,4 +14,10 @@ terraform {
   }
 }
 
+data "template_file" "user_data" {
+  template = file("user-data.sh.tpl")
+  vars = {
+    db_url = aws_db_instance.default.address
+  }
+}
 
