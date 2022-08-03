@@ -6,12 +6,13 @@ data "aws_availability_zones" "available" {
   state = "available"
 }
 
-#terraform {
- #backend "s3" {
- #bucket = "s3-petclinic-bucket"
- #key    = "terraform-states/"
- #region = "eu-north-1"
-  #}
-#}
+terraform {
+ backend "s3" {
+ bucket = "s3-denys1-petclinic-bucket"
+ key    = "terraform.tfstate"
+ region = "eu-north-1"
+  }
+}
+
 
 
